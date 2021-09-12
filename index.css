@@ -1,0 +1,362 @@
+@font-face {
+    font-family: jazmin;
+    src: url(./fonts/RobotoCondensed-Bold.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'jazmin';
+}
+.header {
+    background-color:#fbebe3 ;
+    width: 100%;
+    height: 100vh;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 20vh;
+    justify-content: space-around;
+}
+.ul-nav {
+    height: 100%;
+    width: 40%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-nav {
+    width: 12%;
+    height: 100%;
+    object-fit: none;
+    margin-top: 10px;
+}
+.li-nav {
+    color: #92505e;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+.li-nav a {
+    text-decoration: none;
+    color: inherit;
+}
+.li-nav a:hover {
+    color: white;
+    cursor: pointer;
+}
+.contenedor-header {
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.info-mantasjazmin {
+    width: 50%;
+}
+.info-mantasjazmin img:hover {
+    filter: grayscale(35%);
+}
+.info-mantasjazmin2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.info-mantasjazmin2 h3 {
+    font-weight: 400;
+    font-size: 2.2rem;
+    color: #92505e;
+}
+.info-mantasjazmin2 h4 {
+    color: #b37c84;
+}
+.productos {
+    background-color:#dac1c2 ;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-nuestrosproductos {
+    color: #8c4853;
+    font-size: 5rem;
+}
+.p-nuestrosproductos {
+    color: #8c4853;
+    font-size: 1.8rem;
+}
+.contenedor-section {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 5%;
+}
+.contenedor-productos {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-section img {
+    width: 45%;
+}
+.contenedor-productos p {
+    margin-top: 10px;
+    color: #8c4853;
+    font-size: 1.2rem;
+    font-weight: 200; 
+}
+.ofertas {
+    width: 100%;
+    height: 110vh;
+    background-color: #fbebe3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.texto-ofertas {
+    color: #8c4853;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.tips {
+    width: 100%;
+    height: 50vh;
+    background-color: #fbebe3;
+    color: #8c4853;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.tips-p {
+    font-size: 2.3rem;
+}
+.tips img {
+    filter: opacity(25%);
+}
+.footer-gral {
+    width: 100%;
+    height: 45vh;
+    background-color: #d6bcaf;
+    color: #8c4853;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.btn {
+    border-radius: 3px;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: rgb(209, 187, 206);
+}
+form {
+    margin: 0 auto;
+    border-radius: 3px;
+    font-size: 12px;
+    padding: 10px;
+    width: 300px;
+    background-color: white;
+    color:#999 ;
+}
+input, textarea {
+    outline: none;
+    border: 0;
+}
+.field {
+    border: solid 1px #ccc;
+    padding: 8px;
+    width: 280px;
+}
+.field:focus {
+    border-color: #fbebe3;
+}
+.center-content {
+    text-align: center;
+    margin-top: 10px;
+}
+.pie {
+    width: 100%;
+    height: 20vh;
+    background-color:#d6bcaf ;
+    color: #8c4853;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hugo {
+    width: 100%;
+    height: 5vh;
+    background-color: #999;
+    text-align: center;
+    justify-content: center;
+}
+
+@media (max-width: 1550px) and (min-width:1100px) {
+    .ul-nav {
+        width: 40%;
+    }
+    .pie {
+        height: auto;
+    }
+}
+@media (max-width: 1099px) and (min-width: 850px) {
+    .logo-nav {
+        width: 45%;
+        margin-top: none;
+    }
+    .ul-nav {
+        width: 50%;
+    }
+    .contenedor-header {
+        width: 80%;
+        height: 80vh;
+    }
+    .contenedor-header img {
+        width: 75%;
+    }
+    .contenedor-header h3 {
+        font-size: 1.5rem;
+    }
+    .titulo-nuestrosproductos {
+        font-size: 2rem;
+    }
+    .p-nuestrosproductos {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+}
+@media (max-width: 849px) and (min-width: 500px) {
+    .navbar {
+        width: auto; 
+        font-size: 0.7rem;
+    }
+    .logo-nav {
+        width: 45%;
+        height: 100%;
+    }
+    .contenedor-header h3 {
+        font-size: 1.3em;
+    }
+    .contenedor-header {
+        height: 55vh;
+    }
+    .info-mantasjazmin img {
+        width: 75%;
+    }
+    .productos h2 {
+        font-size: 1.4em;
+    }
+    .productos p {
+        font-size: 1.2em;
+    }
+    .productos {
+        height: 85vh;
+    }
+    .contenedor-productos p {
+        font-size: 0.9em;
+    }
+    .ofertas {
+        height: 90vh;
+    }
+    .ofertas img {
+        width: 4.2em;
+        height: 5.5em;
+    }
+    .tips p {
+        font-size: 1em;
+    }
+    .tips li {
+        margin-top: 10px;
+        font-size: 0.9em;
+    }
+    .tips img {
+        width: 5.5em;
+        height: 3em;
+    }
+    .footer-gral p {
+        font-size: 0.7em;
+    }
+    .footer-gral {
+        height: 60vh;
+    }
+    .pie h2 {
+        font-size: 0.9em;
+    }
+    .pie h3 {
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 499px) and (min-width: 1px) {
+    .navbar {
+        width: auto; 
+        font-size: 0.7rem;
+    }
+    .logo-nav {
+        width: 45%;
+        height: 100%;
+    }
+    .contenedor-header h3 {
+        font-size: 1.3em;
+    }
+    .contenedor-header {
+        height: 55vh;
+    }
+    .info-mantasjazmin img {
+        width: 75%;
+    }
+    .productos h2 {
+        font-size: 1.4em;
+    }
+    .productos p {
+        font-size: 1.2em;
+    }
+    .productos {
+        height: 85vh;
+    }
+    .contenedor-productos p {
+        font-size: 0.9em;
+    }
+    .ofertas {
+        height: 90vh;
+    }
+    .ofertas img {
+        width: 4.2em;
+        height: 5.5em;
+    }
+    .tips p {
+        font-size: 1em;
+    }
+    .tips li {
+        margin-top: 10px;
+        font-size: 0.9em;
+    }
+    .tips img {
+        width: 5.5em;
+        height: 3em;
+    }
+    .footer-gral p {
+        font-size: 0.7em;
+    }
+    .footer-gral {
+        height: 60vh;
+    }
+    .pie h2 {
+        font-size: 0.9em;
+    }
+    .pie h3 {
+        font-size: 0.9em;
+    }
+}
